@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Superman Store</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Superman Store</h1>
+            <div class="user-info">
+                <span id="welcomeMessage">Bem vindo: </span>
+                <a href="home.html" class="back-link">Continuar Comprando</a>
+                <button id="logoutBtn">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Seu Carrinho</h2>
+        <div class="cart-container">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-summary">
+                <h3>Resumo do Pedido</h3>
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">R$ 0,00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Frete</span>
+                        <span id="shipping">R$ 0,00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">R$ 0,00</span>
+                    </div>
+                    <button id="checkoutBtn" class="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Superman. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+</body>
+</html>

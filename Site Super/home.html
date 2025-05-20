@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superman Store</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Superman Store</h1>
+            <div class="user-info">
+                <span id="welcomeMessage">Bem vindo: </span>
+                <a href="cart.html" class="cart-link">Carrinho (<span id="cartCount">0</span>)</a>
+                <button id="logoutBtn">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Banner Principal -->
+        <div class="banner-container">
+            <img src="images/ofertadiadasmaes.png" alt="Ofertas Especiais" class="banner-image">
+        </div>
+    
+        <h2>Produtos em Destaque</h2>
+        <div class="products-grid">
+            <!-- Produtos serão carregados aqui pelo JavaScript -->
+        </div>
+    
+        <!-- Banner Secundário -->
+        <div class="banner-container" style="margin-top: 30px;">
+            <img src="images/frete.png" alt="Frete Grátis" class="banner-image">
+        </div>
+    </main>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Superman. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/store.js"></script>
+</body>
+</html>

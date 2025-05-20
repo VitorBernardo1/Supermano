@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento | Superman Store</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Superman Store</h1>
+            <div class="user-info">
+                <span id="welcomeMessage">Bem vindo: </span>
+                <button id="logoutBtn">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Finalizar Compra</h2>
+        <div class="payment-container">
+            <div class="order-summary">
+                <h3>Resumo do Pedido</h3>
+                <div id="orderSummary">
+                    <!-- Order summary will be loaded here -->
+                </div>
+                <div class="total-row">
+                    <span>Total</span>
+                    <span id="orderTotal">R$ 0,00</span>
+                </div>
+            </div>
+            
+            <div class="payment-options">
+                <div class="payment-option">
+                    <input type="radio" id="pix" name="payment" value="pix" checked>
+                    <label for="pix">
+                        <i class="fas fa-qrcode payment-icon"></i>
+                        <span>PIX</span>
+                        <p>Pague via PIX e receba 5% de desconto</p>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="credit" name="payment" value="credit">
+                    <label for="credit">
+                        <i class="far fa-credit-card payment-icon"></i>
+                        <span>Cartão de Crédito</span>
+                        <p>Parcele em até 12x sem juros</p>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="boleto" name="payment" value="boleto">
+                    <label for="boleto">
+                        <i class="fas fa-barcode payment-icon"></i>
+                        <span>Boleto Bancário</span>
+                        <p>Pague em qualquer agência bancária</p>
+                    </label>
+                </div>
+            </div>
+    </main>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Superman. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/payment.js"></script>
+</body>
+</html>
